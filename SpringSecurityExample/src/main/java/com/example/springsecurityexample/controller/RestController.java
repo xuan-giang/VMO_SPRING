@@ -1,5 +1,7 @@
 package com.example.springsecurityexample.controller;
 
+import com.example.springsecurityexample.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,14 +10,17 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api")
 public class RestController {
 
+    @Autowired
+    private UserService userService;
+
     @GetMapping("/test")
-    public ResponseEntity<Object> get(){
-        return new ResponseEntity<Object>("get", HttpStatus.OK);
+    public ResponseEntity<?> get(){
+        return ResponseEntity.status(200).body(userService.getAllUser());
     }
 
     @GetMapping("/test/{id}")
     public ResponseEntity<Object> getDetail(@PathVariable("id") Long id){
-        return new ResponseEntity<Object>("get-detail",HttpStatus.OK);
+        return ResponseEntity.status(200).body(userService.getAllUser());
     }
 
     @PostMapping("/test")

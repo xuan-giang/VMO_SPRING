@@ -14,4 +14,6 @@ public interface UserService {
     public User findByUsername(String username);
 
     public List<Role_Projection> getListRoleOfUser(Long userId);
+
+    public List<User> getAllUser();
 }

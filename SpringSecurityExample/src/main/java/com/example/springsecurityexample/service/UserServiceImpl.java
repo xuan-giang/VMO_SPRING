@@ -74,5 +74,10 @@ public class UserServiceImpl implements UserService{
         return userRepository.getRoleOfUser(userId);
     }
 
+    @Override
+    public List<User> getAllUser() {
+        return userRepository.findAll();
+    }
+
 
 }
