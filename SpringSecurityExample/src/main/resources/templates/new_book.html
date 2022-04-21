@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new book</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8" />
+  <title>Create New Book</title>
+  <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div align="center">
+  <h1>Create New Book</h1>
+  <br />
+  <form class="form-group" action="#" th:action="@{/save}" th:object="${book}"
+        method="post" enctype="multipart/form-data">
+
+    <table class="table-view" border="0" cellpadding="10">
+      <tr>
+        <td>Book Name:</td>
+        <td><input class="form-control mr-sm-2" type="text" th:field="*{name}" /></td>
+      </tr>
+      <tr>
+        <td>Photos:</td>
+        <td><input class="form-control mr-sm-2" type="file" name="image" accept="image/png, image/jpeg" /></td>
+
+      </tr>
+      <tr>
+        <td>Price:</td>
+        <td><input class="form-control mr-sm-2" type="text" th:field="*{price}" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button class="btn btn-primary" type="submit">Save</button> </td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>
+</body>
+</html>

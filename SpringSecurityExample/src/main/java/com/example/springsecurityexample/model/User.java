@@ -7,6 +7,9 @@ import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Entity
@@ -22,8 +25,13 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
 
+
+    @NotEmpty
+    @Email(message = "Your email is invalid!")
     private String username;
 
+    @NotEmpty
+    @Size(min = 8, message = "Password should have least 8 letter")
     private String password;
 
     @OneToMany(mappedBy = "user")
