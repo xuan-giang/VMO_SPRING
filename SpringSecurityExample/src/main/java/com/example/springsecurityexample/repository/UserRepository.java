@@ -18,4 +18,5 @@ public interface UserRepository extends JpaRepository<User, Long> {
             + "where u.user_id= :userId",nativeQuery = true)
     List<Role_Projection> getRoleOfUser(@Param("userId") Long userId);
 
+
 }

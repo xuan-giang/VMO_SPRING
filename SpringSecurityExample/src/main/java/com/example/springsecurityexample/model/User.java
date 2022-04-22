@@ -10,7 +10,10 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
+
 import java.util.List;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 
 @Entity
 @Table(name = "user")
@@ -26,17 +29,22 @@ public class User {
     private Long userId;
 
 
-    @NotEmpty
-    @Email(message = "Your email is invalid!")
+
     private String username;
 
-    @NotEmpty
-    @Size(min = 8, message = "Password should have least 8 letter")
+    
     private String password;
+
+    private boolean enabled;
+
+    @Enumerated(EnumType.STRING)
+    private Provider provider;
 
     @OneToMany(mappedBy = "user")
     private List<User_Role> user_roles;
 
     public User(String username, String password, List<GrantedAuthority> authories) {
     }
+
+
 }

@@ -1,0 +1,707 @@
+2022-04-21 17:24:03.493  INFO 2788 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 17:24:03.555  INFO 2788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 17:24:03.948  INFO 2788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 17:24:03.963  INFO 2788 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 17:24:04.513  INFO 2788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 17:24:04.513  INFO 2788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:24:04.638  WARN 2788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 17:24:05.156  INFO 2788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-21 17:24:05.156  INFO 2788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-21 17:24:05.203  INFO 2788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 17:24:05.391  INFO 2788 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 17:24:05.882  INFO 2788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 17:24:05.882  INFO 2788 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.385 seconds (JVM running for 5.234)
+2022-04-21 17:24:09.802  INFO 2788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 17:24:09.802  INFO 2788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-21 17:24:09.803  INFO 2788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-21 17:24:52.930  INFO 2788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:24:52.930  INFO 2788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 17:24:52.943  INFO 2788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-21 17:24:57.893  INFO 26380 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 26380 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-21 17:24:57.893  INFO 26380 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-21 17:24:58.539  INFO 26380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-21 17:24:58.599  INFO 26380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2022-04-21 17:24:58.976  INFO 26380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 17:24:58.992  INFO 26380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 17:24:58.992  INFO 26380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-21 17:24:59.117  INFO 26380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-21 17:24:59.117  INFO 26380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
+2022-04-21 17:24:59.258  INFO 26380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 17:24:59.290  INFO 26380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-21 17:24:59.369  INFO 26380 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 17:24:59.431  INFO 26380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 17:24:59.823  INFO 26380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 17:24:59.838  INFO 26380 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 17:25:00.358  INFO 26380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 17:25:00.358  INFO 26380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:25:00.467  WARN 26380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 17:25:01.000  INFO 26380 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-21 17:25:01.000  INFO 26380 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-21 17:25:01.059  INFO 26380 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 17:25:01.235  INFO 26380 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 17:25:01.706  INFO 26380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 17:25:01.706  INFO 26380 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.18 seconds (JVM running for 4.948)
+2022-04-21 17:25:08.807  INFO 26380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 17:25:08.807  INFO 26380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-21 17:25:08.808  INFO 26380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-21 17:25:46.849  INFO 26380 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:25:46.849  INFO 26380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 17:25:46.849  INFO 26380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-21 17:25:51.998  INFO 17852 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 17852 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-21 17:25:51.998  INFO 17852 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-21 17:25:52.643  INFO 17852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-21 17:25:52.704  INFO 17852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2022-04-21 17:25:53.081  INFO 17852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 17:25:53.097  INFO 17852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 17:25:53.097  INFO 17852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-21 17:25:53.238  INFO 17852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-21 17:25:53.238  INFO 17852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1193 ms
+2022-04-21 17:25:53.379  INFO 17852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 17:25:53.411  INFO 17852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-21 17:25:53.489  INFO 17852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 17:25:53.552  INFO 17852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 17:25:53.962  INFO 17852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 17:25:53.977  INFO 17852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 17:25:54.526  INFO 17852 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 17:25:54.526  INFO 17852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:25:54.652  WARN 17852 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 17:25:55.202  INFO 17852 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-21 17:25:55.202  INFO 17852 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-21 17:25:55.249  INFO 17852 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 17:25:55.437  INFO 17852 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 17:25:55.924  INFO 17852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 17:25:55.940  INFO 17852 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.328 seconds (JVM running for 5.184)
+2022-04-21 17:26:06.593  INFO 17852 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:26:06.593  INFO 17852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 17:26:06.593  INFO 17852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-21 17:26:11.389  INFO 13464 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 13464 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-21 17:26:11.389  INFO 13464 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-21 17:26:12.077  INFO 13464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-21 17:26:12.124  INFO 13464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2022-04-21 17:26:12.516  INFO 13464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 17:26:12.516  INFO 13464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 17:26:12.516  INFO 13464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-21 17:26:12.657  INFO 13464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-21 17:26:12.657  INFO 13464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1224 ms
+2022-04-21 17:26:12.752  INFO 13464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 17:26:12.862  INFO 13464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-21 17:26:12.941  INFO 13464 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 17:26:13.003  INFO 13464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 17:26:13.396  INFO 13464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 17:26:13.411  INFO 13464 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 17:26:13.929  INFO 13464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 17:26:13.929  INFO 13464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:26:14.055  WARN 13464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 17:26:14.620  INFO 13464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-21 17:26:14.620  INFO 13464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-21 17:26:14.667  INFO 13464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 17:26:14.855  INFO 13464 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 17:26:15.341  INFO 13464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 17:26:15.357  INFO 13464 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.395 seconds (JVM running for 5.192)
+2022-04-21 17:26:23.437  INFO 13464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 17:26:23.437  INFO 13464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-21 17:26:23.438  INFO 13464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-21 17:28:07.851  INFO 13464 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:28:07.851  INFO 13464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 17:28:07.851  INFO 13464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-21 17:28:12.677  INFO 24068 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 24068 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-21 17:28:12.677  INFO 24068 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-21 17:28:13.320  INFO 24068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-21 17:28:13.367  INFO 24068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2022-04-21 17:28:13.760  INFO 24068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 17:28:13.776  INFO 24068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 17:28:13.776  INFO 24068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-21 17:28:13.904  INFO 24068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-21 17:28:13.904  INFO 24068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1195 ms
+2022-04-21 17:28:14.027  INFO 24068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 17:28:14.058  INFO 24068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-21 17:28:14.152  INFO 24068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 17:28:14.216  INFO 24068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 17:28:14.624  INFO 24068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 17:28:14.624  INFO 24068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 17:28:15.142  INFO 24068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 17:28:15.142  INFO 24068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:28:15.267  WARN 24068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 17:28:15.785  INFO 24068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-21 17:28:15.785  INFO 24068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-21 17:28:15.832  INFO 24068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 17:28:16.020  INFO 24068 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 17:28:16.476  INFO 24068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 17:28:16.491  INFO 24068 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.171 seconds (JVM running for 4.928)
+2022-04-21 17:28:21.598  INFO 24068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 17:28:21.598  INFO 24068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-21 17:28:21.599  INFO 24068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-21 17:30:08.829  INFO 24068 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:30:08.829  INFO 24068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 17:30:08.829  INFO 24068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-21 17:30:13.962  INFO 10276 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 10276 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-21 17:30:13.962  INFO 10276 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-21 17:30:14.622  INFO 10276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-21 17:30:14.684  INFO 10276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2022-04-21 17:30:15.061  INFO 10276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 17:30:15.077  INFO 10276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 17:30:15.077  INFO 10276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-21 17:30:15.203  INFO 10276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-21 17:30:15.203  INFO 10276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2022-04-21 17:30:15.344  INFO 10276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 17:30:15.376  INFO 10276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-21 17:30:15.470  INFO 10276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 17:30:15.533  INFO 10276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 17:30:15.925  INFO 10276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 17:30:15.925  INFO 10276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 17:30:16.445  INFO 10276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 17:30:16.445  INFO 10276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:30:16.554  WARN 10276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 17:30:17.106  INFO 10276 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-21 17:30:17.106  INFO 10276 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-21 17:30:17.153  INFO 10276 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 17:30:17.342  INFO 10276 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 17:30:17.813  INFO 10276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 17:30:17.829  INFO 10276 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.237 seconds (JVM running for 5.01)
+2022-04-21 17:30:23.067  INFO 10276 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 17:30:23.067  INFO 10276 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-21 17:30:23.068  INFO 10276 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-21 17:31:20.755  INFO 10276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:31:20.755  INFO 10276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 17:31:20.755  INFO 10276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-21 17:31:25.687  INFO 2032 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 2032 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-21 17:31:25.702  INFO 2032 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-21 17:31:26.330  INFO 2032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-21 17:31:26.378  INFO 2032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2022-04-21 17:31:26.770  INFO 2032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 17:31:26.770  INFO 2032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 17:31:26.770  INFO 2032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-21 17:31:26.912  INFO 2032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-21 17:31:26.912  INFO 2032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1162 ms
+2022-04-21 17:31:27.053  INFO 2032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 17:31:27.085  INFO 2032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-21 17:31:27.179  INFO 2032 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 17:31:27.242  INFO 2032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 17:31:27.634  INFO 2032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 17:31:27.653  INFO 2032 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-21 17:31:28.168  INFO 2032 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 17:31:28.168  INFO 2032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 17:31:28.294  WARN 2032 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 17:31:28.813  INFO 2032 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-21 17:31:28.813  INFO 2032 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-21 17:31:28.860  INFO 2032 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 17:31:29.055  INFO 2032 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 17:31:29.504  INFO 2032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-21 17:31:29.520  INFO 2032 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.172 seconds (JVM running for 4.943)
+2022-04-21 17:31:32.618  INFO 2032 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 17:31:32.618  INFO 2032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-21 17:31:32.619  INFO 2032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-21 19:40:57.486  WARN 2032 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h7m29s717ms973µs900ns).
+2022-04-21 19:42:18.395  INFO 2032 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 19:42:18.398  INFO 2032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 19:42:18.418  INFO 2032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 08:41:12.997  INFO 19520 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 19520 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 08:41:13.013  INFO 19520 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 08:41:14.154  INFO 19520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 08:41:14.214  INFO 19520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2022-04-22 08:41:14.708  INFO 19520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 08:41:14.715  INFO 19520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 08:41:14.715  INFO 19520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 08:41:14.876  INFO 19520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 08:41:14.877  INFO 19520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1800 ms
+2022-04-22 08:41:15.089  INFO 19520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 08:41:15.146  INFO 19520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 08:41:15.319  INFO 19520 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 08:41:15.415  INFO 19520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 08:41:16.049  INFO 19520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 08:41:16.062  INFO 19520 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 08:41:16.837  INFO 19520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 08:41:16.844  INFO 19520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 08:41:17.010  WARN 19520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 08:41:17.687  INFO 19520 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 08:41:17.687  INFO 19520 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 08:41:17.768  INFO 19520 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 08:41:17.998  INFO 19520 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 08:41:18.575  INFO 19520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 08:41:18.584  INFO 19520 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 6.23 seconds (JVM running for 7.589)
+2022-04-22 08:41:23.317  INFO 19520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 08:41:23.317  INFO 19520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 08:41:23.319  INFO 19520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-22 09:03:41.962  WARN 19520 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m25s665ms236µs600ns).
+2022-04-22 09:08:35.725  INFO 19520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:08:35.735  INFO 19520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:08:35.747  INFO 19520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:08:41.323  INFO 2824 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 2824 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:08:41.326  INFO 2824 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:08:42.075  INFO 2824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:08:42.128  INFO 2824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:08:42.538  INFO 2824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:08:42.545  INFO 2824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:08:42.546  INFO 2824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:08:42.687  INFO 2824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:08:42.688  INFO 2824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1305 ms
+2022-04-22 09:08:42.840  INFO 2824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:08:42.872  INFO 2824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:08:42.965  INFO 2824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:08:43.032  INFO 2824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:08:43.461  INFO 2824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:08:43.470  INFO 2824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:08:44.060  INFO 2824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:08:44.067  INFO 2824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:08:44.220  WARN 2824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:08:44.828  INFO 2824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:08:44.828  INFO 2824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:08:44.887  INFO 2824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:08:45.153  INFO 2824 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:08:45.675  INFO 2824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:08:45.683  INFO 2824 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.779 seconds (JVM running for 5.698)
+2022-04-22 09:08:52.837  INFO 2824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:08:52.837  INFO 2824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:08:52.838  INFO 2824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-22 09:09:29.832  INFO 2824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:09:29.834  INFO 2824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:09:29.840  INFO 2824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:09:35.210  INFO 2992 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 2992 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:09:35.213  INFO 2992 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:09:35.960  INFO 2992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:09:36.014  INFO 2992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:09:36.442  INFO 2992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:09:36.449  INFO 2992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:09:36.449  INFO 2992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:09:36.602  INFO 2992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:09:36.602  INFO 2992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1347 ms
+2022-04-22 09:09:36.751  INFO 2992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:09:36.782  INFO 2992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:09:36.878  INFO 2992 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:09:36.946  INFO 2992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:09:37.382  INFO 2992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:09:37.392  INFO 2992 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:09:37.965  INFO 2992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:09:37.973  INFO 2992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:09:38.100  WARN 2992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:09:38.646  INFO 2992 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:09:38.647  INFO 2992 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:09:38.702  INFO 2992 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:09:38.902  INFO 2992 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:09:39.438  INFO 2992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:09:39.447  INFO 2992 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.642 seconds (JVM running for 5.637)
+2022-04-22 09:09:43.722  INFO 2992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:09:43.723  INFO 2992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:09:43.724  INFO 2992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:10:13.027  INFO 2992 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:10:13.029  INFO 2992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:10:13.034  INFO 2992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:10:18.242  INFO 2944 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 2944 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:10:18.245  INFO 2944 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:10:19.061  INFO 2944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:10:19.117  INFO 2944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:10:19.536  INFO 2944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:10:19.545  INFO 2944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:10:19.545  INFO 2944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:10:19.725  INFO 2944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:10:19.725  INFO 2944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1434 ms
+2022-04-22 09:10:19.940  INFO 2944 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:10:19.973  INFO 2944 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:10:20.082  INFO 2944 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:10:20.157  INFO 2944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:10:20.594  INFO 2944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:10:20.604  INFO 2944 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:10:21.195  INFO 2944 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:10:21.201  INFO 2944 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:10:21.332  WARN 2944 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:10:21.917  INFO 2944 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:10:21.917  INFO 2944 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:10:21.979  INFO 2944 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:10:22.217  INFO 2944 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:10:22.815  INFO 2944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:10:22.822  INFO 2944 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.972 seconds (JVM running for 5.915)
+2022-04-22 09:10:26.858  INFO 2944 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:10:26.858  INFO 2944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:10:26.859  INFO 2944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:11:03.870  INFO 2944 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:11:03.872  INFO 2944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:11:03.876  INFO 2944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:11:09.076  INFO 20172 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 20172 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:11:09.078  INFO 20172 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:11:09.805  INFO 20172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:11:09.860  INFO 20172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:11:10.387  INFO 20172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:11:10.393  INFO 20172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:11:10.393  INFO 20172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:11:10.547  INFO 20172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:11:10.547  INFO 20172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1428 ms
+2022-04-22 09:11:10.690  INFO 20172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:11:10.723  INFO 20172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:11:10.816  INFO 20172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:11:10.884  INFO 20172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:11:11.324  INFO 20172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:11:11.334  INFO 20172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:11:11.933  INFO 20172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:11:11.940  INFO 20172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:11:12.067  WARN 20172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:11:12.610  INFO 20172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:11:12.611  INFO 20172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:11:12.668  INFO 20172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:11:12.866  INFO 20172 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:11:13.376  INFO 20172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:11:13.386  INFO 20172 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.696 seconds (JVM running for 5.655)
+2022-04-22 09:11:16.490  INFO 20172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:11:16.490  INFO 20172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:11:16.492  INFO 20172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-22 09:11:30.375  INFO 20172 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:11:30.377  INFO 20172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:11:30.381  INFO 20172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:11:35.982  INFO 20560 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 20560 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:11:35.986  INFO 20560 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:11:36.704  INFO 20560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:11:36.803  INFO 20560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:11:37.226  INFO 20560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:11:37.233  INFO 20560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:11:37.233  INFO 20560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:11:37.382  INFO 20560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:11:37.383  INFO 20560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1346 ms
+2022-04-22 09:11:37.536  INFO 20560 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:11:37.573  INFO 20560 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:11:37.665  INFO 20560 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:11:37.735  INFO 20560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:11:38.204  INFO 20560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:11:38.214  INFO 20560 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:11:38.789  INFO 20560 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:11:38.796  INFO 20560 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:11:38.924  WARN 20560 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:11:39.496  INFO 20560 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:11:39.496  INFO 20560 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:11:39.551  INFO 20560 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:11:39.749  INFO 20560 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:11:40.262  INFO 20560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:11:40.271  INFO 20560 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.694 seconds (JVM running for 5.836)
+2022-04-22 09:11:42.696  INFO 20560 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:11:42.696  INFO 20560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:11:42.697  INFO 20560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:14:27.839  INFO 20560 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:14:27.841  INFO 20560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:14:27.846  INFO 20560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:14:33.634  INFO 14700 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 14700 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:14:33.637  INFO 14700 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:14:34.340  INFO 14700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:14:34.395  INFO 14700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:14:34.799  INFO 14700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:14:34.805  INFO 14700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:14:34.805  INFO 14700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:14:34.957  INFO 14700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:14:34.957  INFO 14700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1271 ms
+2022-04-22 09:14:35.114  INFO 14700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:14:35.150  INFO 14700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:14:35.248  INFO 14700 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:14:35.317  INFO 14700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:14:35.776  INFO 14700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:14:35.785  INFO 14700 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:14:36.376  INFO 14700 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:14:36.384  INFO 14700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:14:36.520  WARN 14700 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:14:37.082  INFO 14700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:14:37.082  INFO 14700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:14:37.136  INFO 14700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:14:37.432  INFO 14700 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:14:37.967  INFO 14700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:14:37.975  INFO 14700 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.779 seconds (JVM running for 5.804)
+2022-04-22 09:14:44.678  INFO 14700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:14:44.679  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:14:44.680  INFO 14700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:16:13.564  INFO 14700 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:16:13.566  INFO 14700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:16:13.570  INFO 14700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:16:19.067  INFO 13192 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 13192 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:16:19.070  INFO 13192 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:16:19.763  INFO 13192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:16:19.816  INFO 13192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:16:20.233  INFO 13192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:16:20.241  INFO 13192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:16:20.241  INFO 13192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:16:20.390  INFO 13192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:16:20.390  INFO 13192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1273 ms
+2022-04-22 09:16:20.532  INFO 13192 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:16:20.563  INFO 13192 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:16:20.658  INFO 13192 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:16:20.727  INFO 13192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:16:21.147  INFO 13192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:16:21.158  INFO 13192 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:16:21.774  INFO 13192 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:16:21.780  INFO 13192 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:16:21.905  WARN 13192 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:16:22.462  INFO 13192 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:16:22.462  INFO 13192 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:16:22.507  INFO 13192 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:16:22.704  INFO 13192 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:16:23.218  INFO 13192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:16:23.227  INFO 13192 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.585 seconds (JVM running for 5.79)
+2022-04-22 09:16:30.890  INFO 13192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:16:30.890  INFO 13192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:16:30.891  INFO 13192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:16:37.203  INFO 13192 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:16:37.205  INFO 13192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:16:37.209  INFO 13192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:16:40.545  INFO 9152 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 9152 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:16:40.547  INFO 9152 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:16:41.276  INFO 9152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:16:41.337  INFO 9152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:16:41.759  INFO 9152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:16:41.765  INFO 9152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:16:41.766  INFO 9152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:16:41.908  INFO 9152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:16:41.908  INFO 9152 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1323 ms
+2022-04-22 09:16:42.016  INFO 9152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:16:42.132  INFO 9152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:16:42.228  INFO 9152 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:16:42.296  INFO 9152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:16:42.754  INFO 9152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:16:42.764  INFO 9152 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:16:43.447  INFO 9152 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:16:43.454  INFO 9152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:16:43.605  WARN 9152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:16:44.264  INFO 9152 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:16:44.265  INFO 9152 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:16:44.314  INFO 9152 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:16:44.549  INFO 9152 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:16:45.094  INFO 9152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:16:45.103  INFO 9152 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.951 seconds (JVM running for 6.007)
+2022-04-22 09:16:45.775  INFO 9152 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:16:45.775  INFO 9152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:16:45.776  INFO 9152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:23:11.486  INFO 9152 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:23:11.487  INFO 9152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:23:11.492  INFO 9152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:23:16.932  INFO 16984 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 16984 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:23:16.935  INFO 16984 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:23:17.667  INFO 16984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:23:17.718  INFO 16984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:23:18.124  INFO 16984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:23:18.131  INFO 16984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:23:18.131  INFO 16984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:23:18.284  INFO 16984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:23:18.284  INFO 16984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1299 ms
+2022-04-22 09:23:18.430  INFO 16984 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:23:18.461  INFO 16984 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:23:18.556  INFO 16984 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:23:18.622  INFO 16984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:23:19.066  INFO 16984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:23:19.075  INFO 16984 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:23:19.738  INFO 16984 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:23:19.745  INFO 16984 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:23:19.893  WARN 16984 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:23:20.493  INFO 16984 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:23:20.494  INFO 16984 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:23:20.556  INFO 16984 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:23:20.752  INFO 16984 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:23:21.277  INFO 16984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:23:21.287  INFO 16984 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.76 seconds (JVM running for 5.908)
+2022-04-22 09:23:25.733  INFO 16984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:23:25.733  INFO 16984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:23:25.735  INFO 16984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-22 09:28:59.317  INFO 16984 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:28:59.319  INFO 16984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:28:59.323  INFO 16984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:29:04.719  INFO 15824 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 15824 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:29:04.721  INFO 15824 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:29:05.448  INFO 15824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:29:05.503  INFO 15824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:29:05.924  INFO 15824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:29:05.930  INFO 15824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:29:05.930  INFO 15824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:29:06.084  INFO 15824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:29:06.085  INFO 15824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1315 ms
+2022-04-22 09:29:06.238  INFO 15824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:29:06.270  INFO 15824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:29:06.365  INFO 15824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:29:06.434  INFO 15824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:29:06.875  INFO 15824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:29:06.885  INFO 15824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:29:07.465  INFO 15824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:29:07.471  INFO 15824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:29:07.598  WARN 15824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:29:08.177  INFO 15824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:29:08.178  INFO 15824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:29:08.229  INFO 15824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:29:08.425  INFO 15824 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:29:08.924  INFO 15824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:29:08.933  INFO 15824 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.637 seconds (JVM running for 5.759)
+2022-04-22 09:29:16.612  INFO 15824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:29:16.612  INFO 15824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:29:16.613  INFO 15824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:45:41.984  INFO 15824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:45:41.986  INFO 15824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:45:41.991  INFO 15824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:45:47.435  INFO 6032 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 6032 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:45:47.439  INFO 6032 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:45:48.177  INFO 6032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:45:48.232  INFO 6032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:45:48.646  INFO 6032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:45:48.652  INFO 6032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:45:48.653  INFO 6032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:45:48.825  INFO 6032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:45:48.825  INFO 6032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1348 ms
+2022-04-22 09:45:48.998  INFO 6032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:45:49.030  INFO 6032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:45:49.124  INFO 6032 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:45:49.191  INFO 6032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:45:49.623  INFO 6032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:45:49.633  INFO 6032 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:45:50.213  INFO 6032 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:45:50.220  INFO 6032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:45:50.352  WARN 6032 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:45:50.893  INFO 6032 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:45:50.893  INFO 6032 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:45:50.944  INFO 6032 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:45:51.147  INFO 6032 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:45:51.667  INFO 6032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:45:51.676  INFO 6032 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.634 seconds (JVM running for 5.533)
+2022-04-22 09:45:58.834  INFO 6032 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:45:58.834  INFO 6032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:45:58.835  INFO 6032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:46:44.808  INFO 6032 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:46:44.809  INFO 6032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:46:44.814  INFO 6032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:46:50.263  INFO 23228 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 23228 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:46:50.268  INFO 23228 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:46:51.076  INFO 23228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:46:51.129  INFO 23228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:46:51.546  INFO 23228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:46:51.552  INFO 23228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:46:51.552  INFO 23228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:46:51.725  INFO 23228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:46:51.726  INFO 23228 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1394 ms
+2022-04-22 09:46:51.877  INFO 23228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:46:51.911  INFO 23228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:46:52.010  INFO 23228 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:46:52.078  INFO 23228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:46:52.515  INFO 23228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:46:52.526  INFO 23228 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:46:53.102  INFO 23228 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:46:53.108  INFO 23228 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:46:53.238  WARN 23228 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:46:53.824  INFO 23228 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:46:53.824  INFO 23228 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:46:53.875  INFO 23228 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:46:54.090  INFO 23228 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:46:54.628  INFO 23228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:46:54.636  INFO 23228 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.836 seconds (JVM running for 5.72)
+2022-04-22 09:46:59.782  INFO 23228 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:46:59.782  INFO 23228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:46:59.784  INFO 23228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-22 09:47:12.339  INFO 23228 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:47:12.341  INFO 23228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:47:12.346  INFO 23228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:47:15.803  INFO 12512 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 12512 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:47:15.806  INFO 12512 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:47:16.521  INFO 12512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:47:16.582  INFO 12512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:47:17.009  INFO 12512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:47:17.015  INFO 12512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:47:17.015  INFO 12512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:47:17.163  INFO 12512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:47:17.163  INFO 12512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1313 ms
+2022-04-22 09:47:17.268  INFO 12512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:47:17.353  INFO 12512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:47:17.447  INFO 12512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:47:17.518  INFO 12512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:47:17.944  INFO 12512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:47:17.954  INFO 12512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:47:18.521  INFO 12512 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:47:18.527  INFO 12512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:47:18.665  WARN 12512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:47:19.216  INFO 12512 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:47:19.216  INFO 12512 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:47:19.268  INFO 12512 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:47:19.465  INFO 12512 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:47:19.984  INFO 12512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:47:19.992  INFO 12512 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.61 seconds (JVM running for 5.847)
+2022-04-22 09:47:25.204  INFO 12512 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:47:25.204  INFO 12512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:47:25.205  INFO 12512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 09:49:19.587  INFO 12512 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:49:19.589  INFO 12512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 09:49:19.593  INFO 12512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 09:49:22.939  INFO 12452 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 12452 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 09:49:22.942  INFO 12452 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 09:49:23.669  INFO 12452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 09:49:23.724  INFO 12452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2022-04-22 09:49:24.154  INFO 12452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 09:49:24.160  INFO 12452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 09:49:24.161  INFO 12452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 09:49:24.302  INFO 12452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 09:49:24.302  INFO 12452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1316 ms
+2022-04-22 09:49:24.447  INFO 12452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 09:49:24.479  INFO 12452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 09:49:24.574  INFO 12452 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 09:49:24.641  INFO 12452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 09:49:25.072  INFO 12452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 09:49:25.082  INFO 12452 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 09:49:25.653  INFO 12452 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 09:49:25.660  INFO 12452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 09:49:25.788  WARN 12452 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 09:49:26.343  INFO 12452 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 09:49:26.343  INFO 12452 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 09:49:26.400  INFO 12452 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 09:49:26.596  INFO 12452 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 09:49:27.112  INFO 12452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 09:49:27.120  INFO 12452 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.604 seconds (JVM running for 5.513)
+2022-04-22 09:49:34.123  INFO 12452 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 09:49:34.124  INFO 12452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 09:49:34.127  INFO 12452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-04-22 09:49:40.736 ERROR 12452 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.ClassCastException: org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser cannot be cast to com.example.springsecurityexample.oauth.CustomOAuth2User
+	at com.example.springsecurityexample.oauth.OAuth2LoginSuccessHandler.onAuthenticationSuccess(OAuth2LoginSuccessHandler.java:24) ~[classes/:na]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.successfulAuthentication(AbstractAuthenticationProcessingFilter.java:324) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:233) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:178) ~[spring-security-oauth2-client-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_321]
+

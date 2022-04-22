@@ -16,4 +16,6 @@ public interface UserService {
     public List<Role_Projection> getListRoleOfUser(Long userId);
 
     public List<User> getAllUser();
+
+    public void processOAuthPostLogin(String username);
 }

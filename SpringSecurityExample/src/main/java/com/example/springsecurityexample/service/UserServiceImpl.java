@@ -1,9 +1,6 @@
 package com.example.springsecurityexample.service;
 
-import com.example.springsecurityexample.model.Role;
-import com.example.springsecurityexample.model.Role_Projection;
-import com.example.springsecurityexample.model.User;
-import com.example.springsecurityexample.model.User_Role;
+import com.example.springsecurityexample.model.*;
 import com.example.springsecurityexample.repository.RoleRepository;
 import com.example.springsecurityexample.repository.UserRepository;
 import com.example.springsecurityexample.repository.UserRoleRepository;
@@ -80,5 +77,18 @@ public class UserServiceImpl implements UserService{
         return userRepository.findAll();
     }
 
+    public void processOAuthPostLogin(String username) {
+        User existUser = userRepository.findByUsername(username);
+
+        if (existUser == null) {
+            User newUser = new User();
+            newUser.setUsername(username);
+            newUser.setProvider(Provider.GOOGLE);
+            newUser.setEnabled(true);
+
+            userRepository.save(newUser);
+        }
+
+    }
 
 }
