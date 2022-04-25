@@ -14,11 +14,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.util.List;
 import java.util.Map;
 
@@ -45,7 +47,7 @@ public class BookController  implements Runnable{
     public String viewHomePage(Model model) {
         List<Book> listBooks =bookService.getAllBook();
         model.addAttribute("listBooks", listBooks);
-        scheduleTaskWithCronExpression();
+       // scheduleTaskWithCronExpression();
         return "index";
     }
 
@@ -96,6 +98,13 @@ public class BookController  implements Runnable{
         return "redirect:/";
     }
 
+    @GetMapping("/css/1")
+    public String deletheBook() {
+
+        return "145";
+    }
+
+
     @Override
     public void run() {
         System.out.println("Đang tạo thông tin sách...");
@@ -124,30 +133,36 @@ public class BookController  implements Runnable{
         }
     }
 
-    @Scheduled(cron = "30 1 * * * ?")
-    public void scheduleTaskWithCronExpression() {
-        System.out.println("\n\n\nSCANNING...");
-        int amountErrorBook     = 0;
-        int amountBookScanned   = 0;
-        List<Book> bookList = bookService.getAllBook();
+//    @Scheduled(cron = "15 * * * * ?")
+//    public void scheduleTaskWithCronExpression() {
+//        System.out.println("\n\n\n"+printCurrentTime() + "SCANNING...");
+//        int amountErrorBook     = 0;
+//        int amountBookScanned   = 0;
+//        List<Book> bookList = bookService.getAllBook();
+//
+//        for(int i = 0; i < bookList.size(); i++)
+//        {
+//            if(bookList.get(i).getPrice() < 300)
+//            {
+//                System.out.println("\n>>>>>Phát hiện cuốn " + bookList.get(i).getName() + " có giá " + bookList.get(i).getPrice() + " bất thường! <<<<<<<<<\n");
+//                amountErrorBook++;
+//                sleep(2000);
+//            }
+//            amountBookScanned++;
+//
+//            System.out.println(printCurrentTime() + "Số sách đã quét: " + amountBookScanned);
+//            sleep(800);
+//        }
+//
+//        System.out.println("\n\n\n================= KẾT THÚC KIỂM TRA ====================");
+//        System.out.println(printCurrentTime() + "----> Số sách đã quét: " + amountBookScanned);
+//        System.out.println(printCurrentTime() + "----> Số sách phát hiện bất thường: " + amountErrorBook);
+//        System.out.println("========================================================");
+//
+//    }
 
-        for(int i = 0; i < bookList.size(); i++)
-        {
-            if(bookList.get(i).getPrice() < 300)
-            {
-                System.out.println("\n>>>>>Phát hiện cuốn " + bookList.get(i).getName() + " có giá " + bookList.get(i).getPrice() + " bất thường! <<<<<<<<<\n");
-                amountErrorBook++;
-                sleep(2000);
-            }
-            amountBookScanned++;
-            System.out.println("Số sách đã quét: " + amountBookScanned);
-            sleep(800);
-        }
-
-        System.out.println("\n\n\n================= KẾT THÚC KIỂM TRA ====================");
-        System.out.println("----> Số sách đã quét: " + amountBookScanned);
-        System.out.println("----> Số sách phát hiện bất thường: " + amountErrorBook);
-        System.out.println("========================================================");
-
+    private String printCurrentTime()
+    {
+        return "[" + String.valueOf(new Timestamp(System.currentTimeMillis())) + "]: \t";
     }
 }

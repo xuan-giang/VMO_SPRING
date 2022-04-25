@@ -5,6 +5,8 @@ import com.example.springsecurityexample.oauth.OAuth2LoginSuccessHandler;
 import com.example.springsecurityexample.service.MyUserDetailService;
 import com.example.springsecurityexample.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,6 +16,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
+@Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
@@ -38,18 +41,20 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(myUserDetailService).passwordEncoder(bCryptPasswordEncoder);
     }
 
-    protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeRequests()
 
+    protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable()
+        .authorizeRequests()
                 .antMatchers("/login", "/oauth/**").permitAll()
                 .antMatchers("/signup").permitAll()
                 .antMatchers("/signup-post").permitAll()
                 .antMatchers("/api/test/book").permitAll()
                 .antMatchers("/api/test").permitAll()
+                .antMatchers("/css/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/api/**").permitAll()
                 .antMatchers(HttpMethod.POST, "/api/**").permitAll()
                 .antMatchers(HttpMethod.PUT, "/api/**").permitAll()
-
+                .anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/login").failureUrl("/login?error=true")
@@ -74,10 +79,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
+    @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring()
-                .antMatchers("/css/*")
-                .antMatchers("/js/*");
-    }
+                .antMatchers("/css/**", "/js/*");
 
+    }
 }
