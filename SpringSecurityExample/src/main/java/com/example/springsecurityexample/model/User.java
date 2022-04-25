@@ -28,11 +28,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
 
-
-
+    @NotEmpty
     private String username;
 
-    
     private String password;
 
     private boolean enabled;

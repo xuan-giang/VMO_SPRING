@@ -18,4 +18,6 @@ public interface UserService {
     public List<User> getAllUser();
 
     public void processOAuthPostLogin(String username);
+
+    public boolean isGoogleAccount(String username);
 }

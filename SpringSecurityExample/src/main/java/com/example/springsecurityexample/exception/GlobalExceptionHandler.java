@@ -21,6 +21,7 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(500).body("Unknow error ...");
     }
 
+    // Custom exception handler
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public Map<String,String> handleValidationException(MethodArgumentNotValidException ex){

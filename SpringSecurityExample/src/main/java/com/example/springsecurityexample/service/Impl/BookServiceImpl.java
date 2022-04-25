@@ -1,15 +1,18 @@
-package com.example.springsecurityexample.service;
+package com.example.springsecurityexample.service.Impl;
 
 
 import com.example.springsecurityexample.model.Book;
 import com.example.springsecurityexample.repository.BookRepository;
+import com.example.springsecurityexample.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class BookServiceImpl implements BookService{
+@Configurable
+public class BookServiceImpl implements BookService {
 
     @Autowired
     private BookRepository bookRepository;

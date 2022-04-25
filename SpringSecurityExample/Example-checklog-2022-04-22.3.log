@@ -1,0 +1,997 @@
+2022-04-22 13:36:51.859  INFO 25164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 13:36:51.860  INFO 25164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 13:36:51.862  INFO 25164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 13:36:57.532  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 13:36:57.533  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: http-nio-8080-exec-8
+2022-04-22 13:36:57.536  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 13:36:57.536  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 13:36:57.536  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 13:36:57.537  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 13:36:57.537  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-04-22 13:36:57.537  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 13:36:57.537  INFO 25164 --- [http-nio-8080-exec-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 13:36:57.549 ERROR 25164 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:23) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 13:36:57.550 ERROR 25164 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:23) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 13:42:57.535 ERROR 25164 --- [DefaultQuartzScheduler_Worker-2] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:23) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 13:42:57.535 ERROR 25164 --- [DefaultQuartzScheduler_Worker-2] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:23) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 13:48:57.541 ERROR 25164 --- [DefaultQuartzScheduler_Worker-3] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:23) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 13:48:57.541 ERROR 25164 --- [DefaultQuartzScheduler_Worker-3] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:23) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 13:51:09.196  INFO 25164 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 13:51:09.386  INFO 25164 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-04-22 13:51:09.386  INFO 25164 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-04-22 13:51:09.386  INFO 25164 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 13:51:09.386  INFO 25164 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-04-22 13:51:09.389  INFO 25164 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 13:51:09.391  INFO 25164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 13:51:09.395  INFO 25164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 13:51:14.674  INFO 9396 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 9396 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 13:51:14.677  INFO 9396 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 13:51:15.400  INFO 9396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 13:51:15.460  INFO 9396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2022-04-22 13:51:15.885  INFO 9396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 13:51:15.891  INFO 9396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 13:51:15.892  INFO 9396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 13:51:16.038  INFO 9396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 13:51:16.038  INFO 9396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1311 ms
+2022-04-22 13:51:16.182  INFO 9396 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 13:51:16.215  INFO 9396 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 13:51:16.309  INFO 9396 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 13:51:16.379  INFO 9396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 13:51:16.807  INFO 9396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 13:51:16.817  INFO 9396 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 13:51:17.391  INFO 9396 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 13:51:17.397  INFO 9396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 13:51:17.538  WARN 9396 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 13:51:18.112  INFO 9396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 13:51:18.113  INFO 9396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 13:51:18.177  INFO 9396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 13:51:18.416  INFO 9396 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 13:51:18.945  INFO 9396 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 13:51:18.955  INFO 9396 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 13:51:18.956  INFO 9396 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 13:51:18.957  INFO 9396 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 13:51:18.957  INFO 9396 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 13:51:18.957  INFO 9396 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-04-22 13:51:18.957  INFO 9396 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 13:51:18.957  INFO 9396 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@126af200
+2022-04-22 13:51:18.996  INFO 9396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 13:51:18.998  INFO 9396 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-04-22 13:51:18.998  INFO 9396 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 13:51:19.005  INFO 9396 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.735 seconds (JVM running for 5.803)
+2022-04-22 13:51:26.562  INFO 9396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 13:51:26.562  INFO 9396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 13:51:26.563  INFO 9396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 13:51:31.582  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 13:51:31.582  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: http-nio-8080-exec-5
+2022-04-22 13:51:31.583  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 13:51:31.584  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 13:51:31.584  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 13:51:31.584  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 13:51:31.584  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-04-22 13:51:31.584  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 13:51:31.584  INFO 9396 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 13:51:31.597 ERROR 9396 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:19) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 13:51:31.597 ERROR 9396 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:19) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 13:52:16.408  INFO 9396 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 13:52:16.591  INFO 9396 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-04-22 13:52:16.591  INFO 9396 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-04-22 13:52:16.591  INFO 9396 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 13:52:16.592  INFO 9396 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-04-22 13:52:16.595  INFO 9396 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 13:52:16.596  INFO 9396 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 13:52:16.599  INFO 9396 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 13:52:22.281  INFO 22808 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 22808 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 13:52:22.285  INFO 22808 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 13:52:23.068  INFO 22808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 13:52:23.128  INFO 22808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2022-04-22 13:52:23.555  INFO 22808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 13:52:23.562  INFO 22808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 13:52:23.562  INFO 22808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 13:52:23.715  INFO 22808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 13:52:23.715  INFO 22808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1383 ms
+2022-04-22 13:52:23.862  INFO 22808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 13:52:23.896  INFO 22808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 13:52:23.992  INFO 22808 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 13:52:24.062  INFO 22808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 13:52:24.495  INFO 22808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 13:52:24.505  INFO 22808 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 13:52:25.077  INFO 22808 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 13:52:25.083  INFO 22808 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 13:52:25.211  WARN 22808 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 13:52:25.784  INFO 22808 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 13:52:25.784  INFO 22808 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 13:52:25.836  INFO 22808 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 13:52:26.034  INFO 22808 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 13:52:26.550  INFO 22808 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 13:52:26.559  INFO 22808 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 13:52:26.560  INFO 22808 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 13:52:26.560  INFO 22808 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 13:52:26.561  INFO 22808 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 13:52:26.561  INFO 22808 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-04-22 13:52:26.561  INFO 22808 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 13:52:26.561  INFO 22808 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@54f69311
+2022-04-22 13:52:26.604  INFO 22808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 13:52:26.605  INFO 22808 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-04-22 13:52:26.606  INFO 22808 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 13:52:26.612  INFO 22808 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.762 seconds (JVM running for 6.031)
+2022-04-22 13:52:29.503  INFO 22808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 13:52:29.503  INFO 22808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 13:52:29.505  INFO 22808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 13:52:33.942  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 13:52:33.942  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: http-nio-8080-exec-5
+2022-04-22 13:52:33.943  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 13:52:33.944  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 13:52:33.944  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 13:52:33.944  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 13:52:33.944  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-04-22 13:52:33.944  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 13:52:33.944  INFO 22808 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 13:52:33.956 ERROR 22808 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.service.Impl.BookServiceImpl.getAllBook(BookServiceImpl.java:21) ~[classes/:na]
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:19) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 13:52:33.957 ERROR 22808 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.service.Impl.BookServiceImpl.getAllBook(BookServiceImpl.java:21) ~[classes/:na]
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:19) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 13:58:33.946 ERROR 22808 --- [DefaultQuartzScheduler_Worker-2] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.service.Impl.BookServiceImpl.getAllBook(BookServiceImpl.java:21) ~[classes/:na]
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:19) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 13:58:33.947 ERROR 22808 --- [DefaultQuartzScheduler_Worker-2] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.service.Impl.BookServiceImpl.getAllBook(BookServiceImpl.java:21) ~[classes/:na]
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:19) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:04:33.945 ERROR 22808 --- [DefaultQuartzScheduler_Worker-3] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.service.Impl.BookServiceImpl.getAllBook(BookServiceImpl.java:21) ~[classes/:na]
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:19) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:04:33.946 ERROR 22808 --- [DefaultQuartzScheduler_Worker-3] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.service.Impl.BookServiceImpl.getAllBook(BookServiceImpl.java:21) ~[classes/:na]
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:19) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:06:07.187  INFO 22808 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 14:06:07.375  INFO 22808 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-04-22 14:06:07.375  INFO 22808 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-04-22 14:06:07.376  INFO 22808 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 14:06:07.376  INFO 22808 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-04-22 14:06:07.379  INFO 22808 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:06:07.381  INFO 22808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 14:06:07.385  INFO 22808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 14:06:12.958  INFO 17312 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 17312 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 14:06:12.961  INFO 17312 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 14:06:13.716  INFO 17312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 14:06:13.770  INFO 17312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2022-04-22 14:06:14.201  INFO 17312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 14:06:14.208  INFO 17312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 14:06:14.208  INFO 17312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 14:06:14.360  INFO 17312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 14:06:14.360  INFO 17312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1352 ms
+2022-04-22 14:06:14.503  INFO 17312 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 14:06:14.535  INFO 17312 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 14:06:14.628  INFO 17312 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 14:06:14.695  INFO 17312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 14:06:15.134  INFO 17312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 14:06:15.146  INFO 17312 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 14:06:15.733  INFO 17312 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 14:06:15.740  INFO 17312 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:06:15.866  WARN 17312 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 14:06:16.415  INFO 17312 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 14:06:16.415  INFO 17312 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 14:06:16.468  INFO 17312 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 14:06:16.669  INFO 17312 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 14:06:17.187  INFO 17312 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 14:06:17.196  INFO 17312 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 14:06:17.198  INFO 17312 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 14:06:17.199  INFO 17312 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 14:06:17.200  INFO 17312 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 14:06:17.200  INFO 17312 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-04-22 14:06:17.200  INFO 17312 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 14:06:17.200  INFO 17312 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@69b1e8f8
+2022-04-22 14:06:17.245  INFO 17312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 14:06:17.246  INFO 17312 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-04-22 14:06:17.247  INFO 17312 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 14:06:17.254  INFO 17312 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.707 seconds (JVM running for 5.81)
+2022-04-22 14:06:24.553  INFO 17312 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 14:06:24.554  INFO 17312 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 14:06:24.555  INFO 17312 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 14:06:29.596  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 14:06:29.596  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: http-nio-8080-exec-10
+2022-04-22 14:06:29.597  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 14:06:29.598  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 14:06:29.598  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 14:06:29.598  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 14:06:29.598  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-04-22 14:06:29.598  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 14:06:29.598  INFO 17312 --- [http-nio-8080-exec-10] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 14:06:29.606 ERROR 17312 --- [DefaultQuartzScheduler_QuartzSchedulerThread] org.quartz.core.ErrorLogger              : An error occured instantiating job to be executed. job= 'group1.jobName'
+
+org.quartz.SchedulerException: Problem instantiating class 'com.example.springsecurityexample.config.CronJobConfig'
+	at org.quartz.simpl.SimpleJobFactory.newJob(SimpleJobFactory.java:58) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.PropertySettingJobFactory.newJob(PropertySettingJobFactory.java:69) ~[quartz-2.2.1.jar:na]
+	at org.quartz.core.JobRunShell.initialize(JobRunShell.java:127) ~[quartz-2.2.1.jar:na]
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:375) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.<init>(CronJobConfig.java:21) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_321]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_321]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_321]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_321]
+	at java.lang.Class.newInstance(Class.java:442) ~[na:1.8.0_321]
+	at org.quartz.simpl.SimpleJobFactory.newJob(SimpleJobFactory.java:56) ~[quartz-2.2.1.jar:na]
+	... 3 common frames omitted
+
+2022-04-22 14:06:29.607  INFO 17312 --- [DefaultQuartzScheduler_QuartzSchedulerThread] org.quartz.simpl.RAMJobStore             : All triggers of Job group1.jobName set to ERROR state.
+2022-04-22 14:21:52.638  INFO 17312 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 14:21:52.821  INFO 17312 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-04-22 14:21:52.821  INFO 17312 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-04-22 14:21:52.821  INFO 17312 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 14:21:52.822  INFO 17312 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-04-22 14:21:52.824  INFO 17312 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:21:52.826  INFO 17312 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 14:21:52.830  INFO 17312 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 14:21:58.260  INFO 4620 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 4620 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 14:21:58.263  INFO 4620 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 14:21:59.033  INFO 4620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 14:21:59.085  INFO 4620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2022-04-22 14:21:59.504  INFO 4620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 14:21:59.511  INFO 4620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 14:21:59.511  INFO 4620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 14:21:59.654  INFO 4620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 14:21:59.654  INFO 4620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1334 ms
+2022-04-22 14:21:59.795  INFO 4620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 14:21:59.828  INFO 4620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 14:21:59.920  INFO 4620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 14:21:59.988  INFO 4620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 14:22:00.426  INFO 4620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 14:22:00.437  INFO 4620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 14:22:01.000  INFO 4620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 14:22:01.007  INFO 4620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:22:01.018  WARN 4620 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cronJobConfig' defined in file [D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes\com\example\springsecurityexample\config\CronJobConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.springsecurityexample.config.CronJobConfig]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2022-04-22 14:22:01.019  INFO 4620 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:22:01.022  INFO 4620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 14:22:01.026  INFO 4620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 14:22:01.027  INFO 4620 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-22 14:22:01.036  INFO 4620 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-22 14:22:01.076 ERROR 4620 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cronJobConfig' defined in file [D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes\com\example\springsecurityexample\config\CronJobConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.springsecurityexample.config.CronJobConfig]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) [spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) [spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) [spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.6.jar:2.6.6]
+	at com.example.springsecurityexample.SpringSecurityExampleApplication.main(SpringSecurityExampleApplication.java:12) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.springsecurityexample.config.CronJobConfig]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.<init>(CronJobConfig.java:22) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_321]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_321]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_321]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_321]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 19 common frames omitted
+
+2022-04-22 14:24:56.041  INFO 4668 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 4668 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 14:24:56.044  INFO 4668 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 14:24:56.877  INFO 4668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 14:24:56.932  INFO 4668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2022-04-22 14:24:57.403  INFO 4668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 14:24:57.409  INFO 4668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 14:24:57.409  INFO 4668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 14:24:57.572  INFO 4668 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 14:24:57.572  INFO 4668 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1475 ms
+2022-04-22 14:24:57.738  INFO 4668 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 14:24:57.779  INFO 4668 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 14:24:57.885  INFO 4668 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 14:24:57.969  INFO 4668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 14:24:58.454  INFO 4668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 14:24:58.465  INFO 4668 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 14:24:59.131  INFO 4668 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 14:24:59.138  INFO 4668 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:24:59.277  WARN 4668 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 14:24:59.966  INFO 4668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 14:24:59.966  INFO 4668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 14:25:00.053  INFO 4668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 14:25:00.301  INFO 4668 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 14:25:00.841  INFO 4668 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 14:25:00.851  INFO 4668 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 14:25:00.852  INFO 4668 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 14:25:00.853  INFO 4668 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 14:25:00.854  INFO 4668 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 14:25:00.854  INFO 4668 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-04-22 14:25:00.854  INFO 4668 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 14:25:00.854  INFO 4668 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@297c3a43
+2022-04-22 14:25:00.898  INFO 4668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 14:25:00.899  INFO 4668 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-04-22 14:25:00.899  INFO 4668 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 14:25:00.907  INFO 4668 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 5.32 seconds (JVM running for 6.278)
+2022-04-22 14:25:12.575  INFO 4668 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 14:25:12.575  INFO 4668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 14:25:12.576  INFO 4668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 14:25:18.834  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 14:25:18.834  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: http-nio-8080-exec-5
+2022-04-22 14:25:18.835  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 14:25:18.836  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 14:25:18.836  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 14:25:18.836  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 14:25:18.836  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-04-22 14:25:18.836  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 14:25:18.836  INFO 4668 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 14:25:18.846 ERROR 4668 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:25) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:25:18.848 ERROR 4668 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.config.CronJobConfig.execute(CronJobConfig.java:25) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:26:51.237  INFO 4668 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 14:26:51.436  INFO 4668 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-04-22 14:26:51.436  INFO 4668 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-04-22 14:26:51.436  INFO 4668 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 14:26:51.436  INFO 4668 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-04-22 14:26:51.439  INFO 4668 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:26:51.440  INFO 4668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 14:26:51.444  INFO 4668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 14:26:56.948  INFO 25612 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 25612 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 14:26:56.951  INFO 25612 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 14:26:57.679  INFO 25612 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 14:26:57.738  INFO 25612 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2022-04-22 14:26:58.185  INFO 25612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 14:26:58.190  INFO 25612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 14:26:58.191  INFO 25612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 14:26:58.339  INFO 25612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 14:26:58.340  INFO 25612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1344 ms
+2022-04-22 14:26:58.482  INFO 25612 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 14:26:58.514  INFO 25612 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 14:26:58.625  INFO 25612 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 14:26:58.693  INFO 25612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 14:26:59.127  INFO 25612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 14:26:59.138  INFO 25612 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 14:26:59.729  INFO 25612 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 14:26:59.736  INFO 25612 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:26:59.862  WARN 25612 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 14:27:00.491  INFO 25612 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 14:27:00.491  INFO 25612 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 14:27:00.544  INFO 25612 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 14:27:00.756  INFO 25612 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 14:27:01.319  INFO 25612 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 14:27:01.328  INFO 25612 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 14:27:01.329  INFO 25612 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 14:27:01.330  INFO 25612 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 14:27:01.331  INFO 25612 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 14:27:01.331  INFO 25612 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-04-22 14:27:01.331  INFO 25612 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 14:27:01.331  INFO 25612 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4ab86b2a
+2022-04-22 14:27:01.376  INFO 25612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 14:27:01.377  INFO 25612 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-04-22 14:27:01.377  INFO 25612 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 14:27:01.386  INFO 25612 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.849 seconds (JVM running for 5.995)
+2022-04-22 14:27:01.735  INFO 25612 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 14:27:01.736  INFO 25612 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 14:27:01.737  INFO 25612 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 14:27:07.658  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 14:27:07.658  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: http-nio-8080-exec-5
+2022-04-22 14:27:07.660  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 14:27:07.660  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 14:27:07.660  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 14:27:07.660  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 14:27:07.660  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-04-22 14:27:07.660  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 14:27:07.660  INFO 25612 --- [http-nio-8080-exec-5] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 14:31:49.235  INFO 25612 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 14:31:49.446  INFO 25612 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-04-22 14:31:49.446  INFO 25612 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-04-22 14:31:49.446  INFO 25612 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-04-22 14:31:49.446  INFO 25612 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-04-22 14:31:49.449  INFO 25612 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:31:49.451  INFO 25612 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 14:31:49.454  INFO 25612 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 14:31:54.899  INFO 14680 --- [main] c.e.s.SpringSecurityExampleApplication   : Starting SpringSecurityExampleApplication using Java 1.8.0_321 on XuanGiang with PID 14680 (D:\VMO COMPANY\LEARNING\SpringSecurityExample\target\classes started by 84344 in D:\VMO COMPANY\LEARNING\SpringSecurityExample)
+2022-04-22 14:31:54.902  INFO 14680 --- [main] c.e.s.SpringSecurityExampleApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 14:31:55.679  INFO 14680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 14:31:55.733  INFO 14680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2022-04-22 14:31:56.203  INFO 14680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 14:31:56.210  INFO 14680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 14:31:56.210  INFO 14680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-22 14:31:56.371  INFO 14680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 14:31:56.372  INFO 14680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1428 ms
+2022-04-22 14:31:56.516  INFO 14680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 14:31:56.551  INFO 14680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-22 14:31:56.648  INFO 14680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 14:31:56.715  INFO 14680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 14:31:57.147  INFO 14680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 14:31:57.156  INFO 14680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-22 14:31:57.721  INFO 14680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 14:31:57.728  INFO 14680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:31:57.853  WARN 14680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 14:31:58.408  INFO 14680 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/*'] with []
+2022-04-22 14:31:58.408  INFO 14680 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/*'] with []
+2022-04-22 14:31:58.460  INFO 14680 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-22 14:31:58.655  INFO 14680 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-22 14:31:59.160  INFO 14680 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 14:31:59.169  INFO 14680 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 14:31:59.170  INFO 14680 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 14:31:59.171  INFO 14680 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 14:31:59.171  INFO 14680 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 14:31:59.171  INFO 14680 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-04-22 14:31:59.171  INFO 14680 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 14:31:59.172  INFO 14680 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2fa47368
+2022-04-22 14:31:59.213  INFO 14680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 14:31:59.214  INFO 14680 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-04-22 14:31:59.214  INFO 14680 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 14:31:59.221  INFO 14680 --- [main] c.e.s.SpringSecurityExampleApplication   : Started SpringSecurityExampleApplication in 4.744 seconds (JVM running for 5.627)
+2022-04-22 14:32:09.484  INFO 14680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 14:32:09.485  INFO 14680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 14:32:09.486  INFO 14680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 14:32:15.200  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-04-22 14:32:15.200  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: http-nio-8080-exec-9
+2022-04-22 14:32:15.201  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-04-22 14:32:15.201  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2022-04-22 14:32:15.202  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-04-22 14:32:15.202  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-04-22 14:32:15.202  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2022-04-22 14:32:15.202  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2022-04-22 14:32:15.202  INFO 14680 --- [http-nio-8080-exec-9] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2022-04-22 14:32:15.217 ERROR 14680 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:32:15.218 ERROR 14680 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:32:25.202 ERROR 14680 --- [DefaultQuartzScheduler_Worker-2] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:32:25.202 ERROR 14680 --- [DefaultQuartzScheduler_Worker-2] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:32:35.192 ERROR 14680 --- [DefaultQuartzScheduler_Worker-3] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:32:35.193 ERROR 14680 --- [DefaultQuartzScheduler_Worker-3] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:32:45.204 ERROR 14680 --- [DefaultQuartzScheduler_Worker-4] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:32:45.204 ERROR 14680 --- [DefaultQuartzScheduler_Worker-4] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:32:55.197 ERROR 14680 --- [DefaultQuartzScheduler_Worker-5] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:32:55.197 ERROR 14680 --- [DefaultQuartzScheduler_Worker-5] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:33:05.196 ERROR 14680 --- [DefaultQuartzScheduler_Worker-6] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:33:05.196 ERROR 14680 --- [DefaultQuartzScheduler_Worker-6] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:33:15.198 ERROR 14680 --- [DefaultQuartzScheduler_Worker-7] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:33:15.199 ERROR 14680 --- [DefaultQuartzScheduler_Worker-7] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:33:25.203 ERROR 14680 --- [DefaultQuartzScheduler_Worker-8] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:33:25.203 ERROR 14680 --- [DefaultQuartzScheduler_Worker-8] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:33:35.201 ERROR 14680 --- [DefaultQuartzScheduler_Worker-9] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:33:35.201 ERROR 14680 --- [DefaultQuartzScheduler_Worker-9] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:33:45.199 ERROR 14680 --- [DefaultQuartzScheduler_Worker-10] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:33:45.200 ERROR 14680 --- [DefaultQuartzScheduler_Worker-10] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:33:55.199 ERROR 14680 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:33:55.199 ERROR 14680 --- [DefaultQuartzScheduler_Worker-1] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:34:05.201 ERROR 14680 --- [DefaultQuartzScheduler_Worker-2] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:34:05.202 ERROR 14680 --- [DefaultQuartzScheduler_Worker-2] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:34:15.201 ERROR 14680 --- [DefaultQuartzScheduler_Worker-3] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:34:15.202 ERROR 14680 --- [DefaultQuartzScheduler_Worker-3] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:34:25.192 ERROR 14680 --- [DefaultQuartzScheduler_Worker-4] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:34:25.192 ERROR 14680 --- [DefaultQuartzScheduler_Worker-4] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:34:35.206 ERROR 14680 --- [DefaultQuartzScheduler_Worker-5] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:34:35.206 ERROR 14680 --- [DefaultQuartzScheduler_Worker-5] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:34:45.193 ERROR 14680 --- [DefaultQuartzScheduler_Worker-6] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:34:45.193 ERROR 14680 --- [DefaultQuartzScheduler_Worker-6] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:34:55.199 ERROR 14680 --- [DefaultQuartzScheduler_Worker-7] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:34:55.199 ERROR 14680 --- [DefaultQuartzScheduler_Worker-7] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:35:05.201 ERROR 14680 --- [DefaultQuartzScheduler_Worker-8] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+
+2022-04-22 14:35:05.204 ERROR 14680 --- [DefaultQuartzScheduler_Worker-8] org.quartz.core.ErrorLogger              : Job (group1.jobName threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	... 1 common frames omitted
+
+2022-04-22 14:35:15.198 ERROR 14680 --- [DefaultQuartzScheduler_Worker-9] org.quartz.core.JobRunShell              : Job group1.jobName threw an unhandled Exception: 
+
+java.lang.NullPointerException: null
+	at com.example.springsecurityexample.job.EmailJob.executeInternal(EmailJob.java:18) ~[classes/:na]
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75) ~[spring-context-support-5.3.18.jar:5.3.18]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.2.1.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.2.1.jar:na]
+

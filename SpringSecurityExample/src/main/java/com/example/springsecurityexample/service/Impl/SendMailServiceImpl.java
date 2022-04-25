@@ -1,12 +1,13 @@
-package com.example.springsecurityexample.service;
+package com.example.springsecurityexample.service.Impl;
 
+import com.example.springsecurityexample.service.SendMailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SendMailServiceImpl implements SendMailService{
+public class SendMailServiceImpl implements SendMailService {
 
     @Autowired
     private JavaMailSender javaMailSender;

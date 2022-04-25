@@ -33,18 +33,11 @@ public class LoginController {
 
     @PostMapping("/signup-post")
     public String signupPost(@RequestParam("username") @Valid String username, @RequestParam("password") @Valid String password) {
-
         User u = new User();
-
-
-        System.out.println(username);
-        System.out.println(password);
-
         u.setUsername(username);
         u.setPassword(password);
         userService.createUser(u);
 
-        System.out.println("Sign up successfully");
         return "redirect:/login";
     }
 
