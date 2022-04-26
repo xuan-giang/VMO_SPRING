@@ -3,12 +3,16 @@ package com.example.springsecurityexample.service.Impl;
 import com.example.springsecurityexample.model.*;
 import com.example.springsecurityexample.repository.RoleRepository;
 import com.example.springsecurityexample.repository.UserRepository;
-import com.example.springsecurityexample.repository.UserRoleRepository;
 import com.example.springsecurityexample.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -26,8 +30,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RoleRepository roleRepository;
 
-    @Autowired
-    private UserRoleRepository userRoleRepository;
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
@@ -35,6 +39,7 @@ public class UserServiceImpl implements UserService {
     private final String DEFAULT_PASSWORD = "admin";
 
     @Override
+    @Transactional
     public User createUser(@Valid User user) {
 
         if(user.getUsername() != null)
@@ -46,19 +51,21 @@ public class UserServiceImpl implements UserService {
             User user1 = new User();
             user1.setUsername(user.getUsername());
             user1.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+            user1.setEnabled(true);
             userRepository.save(user1);
-
-            Role role = new Role();
-            role.setRoleCode("ADMIN");
-            role.setRoleName("Quyen Admin");
-            roleRepository.save(role);
-
-            User_Role user_role = new User_Role();
-            user_role.setRole(role);
-            user_role.setUser(user1);
-            userRoleRepository.save(user_role);
+            System.out.println("Test ID user = " + user1.getUserId());
+            insertWithQuery(user1);
         }
         return null;
+    }
+
+
+    @Transactional
+    public void insertWithQuery(User user) {
+        entityManager.createNativeQuery("INSERT INTO users_roles (user_id, role_id) VALUES (?,?)")
+                .setParameter(1, user.getUserId())
+                .setParameter(2, 1)
+                .executeUpdate();
     }
 
     @Override
@@ -75,10 +82,8 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByUsername(username);
     }
 
-    @Override
-    public List<Role_Projection> getListRoleOfUser(Long userId) {
-        return userRepository.getRoleOfUser(userId);
-    }
+
+
 
     @Override
     public List<User> getAllUser() {

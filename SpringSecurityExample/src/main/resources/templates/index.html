@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org" 	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
@@ -15,8 +16,8 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/home-page">Trang chủ</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/detail">Tài khoản</a>
+                    <li class="nav-item" sec:authorize="hasAuthority('ADMIN')">
+                        <a class="nav-link" href="/detail">Quản trị</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/logout">Đăng xuất</a>
@@ -30,6 +31,16 @@
         </nav>
     </div>
     <h1>Book List</h1>
+    				<span sec:authentication="name">Username</span>
+
+    				<span sec:authentication="principal.authorities">Roles</span>
+
+    				<div sec:authorize="isAuthenticated()">
+    					Welcome <b><span sec:authentication="name">Username</span></b>
+    					&nbsp;
+    					<i><span sec:authentication="principal.authorities">Roles</span></i>
+    				</div>
+
     <a class="btn btn-primary" href="/new">New Book</a>
     <div class="row">
 

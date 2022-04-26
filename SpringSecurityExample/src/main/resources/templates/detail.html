@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -10,12 +12,21 @@
 		<div class="row">
 			<div class="col-12 text-center">
 				<h2>Login Test</h2>
+<!--				<span sec:authentication="role_code">Username</span>-->
+
+<!--				<span sec:authentication="principal.authorities">Roles</span>-->
+
+<!--				<div sec:authorize="isAuthenticated()">-->
+<!--					Welcome <b><span sec:authentication="role_code">Username</span></b>-->
+<!--					&nbsp;-->
+<!--					<i><span sec:authentication="principal.authorities">Roles</span></i>-->
+<!--				</div>-->
 			</div>
 			<div class="col-sm-4"></div>
 			<div class="col-sm-4" style="background-color: #F5F5F5">
-				<form action="login" method="post" class="form-group">
+				<form action="login" method="post" class="form-group" sec:authorize="hasAuthority('ADMIN')">
 					<label>UserName</label>
-					<input type="text" name="username" placeholder="Input username" class="form-control">
+					<input type="text" name="username" placeholder="Input username" class="form-control" >
 					
 					<label>Password</label>
 					<input type="password" name="password" placeholder="Input password" class="form-control">

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.transaction.Transactional;
 import javax.validation.Valid;
 
 @Controller
@@ -31,6 +32,7 @@ public class LoginController {
         return "signup";
     }
 
+    @Transactional
     @PostMapping("/signup-post")
     public String signupPost(@RequestParam("username") @Valid String username, @RequestParam("password") @Valid String password) {
         User u = new User();

@@ -27,7 +27,7 @@ public class HomeController {
         return "home-page";
     }
 
-
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/detail")
     public String detail() {
         return "detail";

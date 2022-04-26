@@ -6,24 +6,19 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "roles")
 public class Role {
 
     @Id
-    @Column(name = "role_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long roleId;
+    @Column(name = "role_id")
+    private Long id;
 
-    private String roleName;
-
-    private String roleCode;
-
-    @OneToMany(mappedBy = "role")
-    private List<User_Role> user_roles;
+    private String name;
 }

@@ -1,6 +1,5 @@
 package com.example.springsecurityexample.service;
 
-import com.example.springsecurityexample.model.Role_Projection;
 import com.example.springsecurityexample.model.User;
 
 import java.util.List;
@@ -13,7 +12,6 @@ public interface UserService {
 
     public User findByUsername(String username);
 
-    public List<Role_Projection> getListRoleOfUser(Long userId);
 
     public List<User> getAllUser();
 
